@@ -24,7 +24,7 @@ data class CategoryItems(
 
     @ColumnInfo(name = "strcategorythumb")
     @Expose
-    @SerializedName("istrCategoryThumb")
+    @SerializedName("strCategoryThumb")
     val strcategorythumb: String,
 
     @ColumnInfo(name = "strcategorydescription")

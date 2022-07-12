@@ -4,29 +4,31 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import ph.gcash.cadet.kotlin.project.recipeapp.dao.RecipeDao
-import ph.gcash.cadet.kotlin.project.recipeapp.entities.Category
-import ph.gcash.cadet.kotlin.project.recipeapp.entities.CategoryItems
-import ph.gcash.cadet.kotlin.project.recipeapp.entities.Recipes
+import ph.gcash.cadet.kotlin.project.recipeapp.entities.*
 import ph.gcash.cadet.kotlin.project.recipeapp.entities.converter.CategoryListConverter
+import ph.gcash.cadet.kotlin.project.recipeapp.entities.converter.MealListConverter
 
-@Database(entities = [Recipes::class, CategoryItems::class, Category::class, CategoryListConverter::class], version = 1, exportSchema = false)
+@Database(entities = [Recipes::class, CategoryItems::class,
+    Category::class, Meal::class, MealsItems::class],version = 1,exportSchema = false)
+@TypeConverters(CategoryListConverter::class, MealListConverter::class)
 abstract class RecipeDatabase: RoomDatabase() {
 
     companion object{
 
-        var recipeDatabase:RecipeDatabase? = null
+        var recipesDatabase:RecipeDatabase? = null
 
         @Synchronized
         fun getDatabase(context: Context): RecipeDatabase{
-            if(recipeDatabase != null) {
-                recipeDatabase = Room.databaseBuilder(
+            if (recipesDatabase == null){
+                recipesDatabase = Room.databaseBuilder(
                     context,
                     RecipeDatabase::class.java,
                     "recipe.db"
                 ).build()
             }
-            return recipeDatabase!!
+            return recipesDatabase!!
         }
     }
 
