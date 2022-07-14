@@ -70,7 +70,7 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun getMealDataFromDb(categoryName:String){
-        tvCategory.text = "$categoryName Category"
+        tvCategory1.text = "$categoryName Category"
         launch {
             this.let {
                 var cat = RecipeDatabase.getDatabase(this@HomeActivity).recipeDao().getSpecificMealList(categoryName)
