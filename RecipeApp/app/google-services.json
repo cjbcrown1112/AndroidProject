@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "572004019285",
+    "project_id": "recipeapp-8c1af",
+    "storage_bucket": "recipeapp-8c1af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572004019285:android:fdb86041f02c02cb34f8dc",
+        "android_client_info": {
+          "package_name": "ph.gcash.cadet.kotlin.project.recipeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572004019285-hkembk5mj3qab3elji9r7ti8t8jh12c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl2R4WUaZFIcI-V7NhxaZzH9I1afXExOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572004019285-hkembk5mj3qab3elji9r7ti8t8jh12c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
