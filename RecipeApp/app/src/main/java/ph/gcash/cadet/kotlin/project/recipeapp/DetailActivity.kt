@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.activity_splash.*
 import ph.gcash.cadet.kotlin.project.recipeapp.entities.MealResponse
 import ph.gcash.cadet.kotlin.project.recipeapp.interfaces.GetDataService
 import ph.gcash.cadet.kotlin.project.recipeapp.retrofitclient.RetrofitClientInstance
@@ -27,6 +28,12 @@ class DetailActivity : BaseActivity() {
 
         getSpecificItem(id!!)
 
+        imgToolbarBtnBack.setOnClickListener {
+            var intent = Intent(this@DetailActivity, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        
 
         btnInstagram.setOnClickListener {
             //val sAppLink = "https://www.instagram.com/reginadiloyy"

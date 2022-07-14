@@ -37,6 +37,7 @@ class SplashActivity : BaseActivity(), EasyPermissions.RationaleCallbacks,
             startActivity(intent)
             finish()
         }
+
     }
 
 
