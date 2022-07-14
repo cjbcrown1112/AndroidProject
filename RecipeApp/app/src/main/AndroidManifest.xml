@@ -43,6 +43,18 @@
         <activity android:name=".SignUpActivity"
             android:screenOrientation="locked">
         </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:authorities="com.facebook.app.FacebookContentProvider{454125879548783}"
+            android:name="com.facebook.FacebookContentProvider"
+            android:value="@string/facebook_app_id"
+            android:exported="true"/>
+
+
     </application>
 
 </manifest>

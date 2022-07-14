@@ -7,6 +7,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.facebook.share.model.ShareHashtag
+import com.facebook.share.model.ShareLinkContent
+import com.facebook.share.widget.ShareDialog
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.activity_splash.*
 import ph.gcash.cadet.kotlin.project.recipeapp.entities.MealResponse
@@ -33,13 +36,24 @@ class DetailActivity : BaseActivity() {
             startActivity(intent)
             finish()
         }
-        
+
 
         btnInstagram.setOnClickListener {
             //val sAppLink = "https://www.instagram.com/reginadiloyy"
             val sAppLink = "https://www.instagram.com"
             val sPackage = "com.instagram.android"
             openLink(sAppLink, sPackage, sAppLink)
+        }
+
+        btnFacebookShare.setOnClickListener {
+
+            var hashTag = ShareHashtag.Builder().setHashtag("#LetsGoKotlinApp").build()
+
+            var shareContent = ShareLinkContent.Builder().setShareHashtag(hashTag)
+                .setContentUrl(Uri.parse(youtubeLink))
+                .build()
+            ShareDialog.show(this@DetailActivity, shareContent)
+
         }
 
 

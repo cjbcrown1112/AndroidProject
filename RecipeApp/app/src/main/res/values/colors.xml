@@ -6,8 +6,11 @@
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#F6DEDE</color>
-    <color name="youtube">#C64141</color>
+    <color name="youtube">#FF0000</color>
     <color name="gray">#F1ECEC</color>
     <color name="darkGray">#3A3939</color>
     <color name="hintTextColor">#787878</color>
+    <color name="facebook">#4267B2</color>
+    <color name="instagram">#3f729b</color>
+
 </resources>
