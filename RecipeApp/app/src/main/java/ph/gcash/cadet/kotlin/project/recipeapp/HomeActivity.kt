@@ -46,9 +46,10 @@ class HomeActivity : BaseActivity() {
 
     private val onCLickedSubItem  = object : SubCategoryAdapter.OnItemClickListener{
         override fun onClicked(id: String) {
-            var intent = Intent(this@HomeActivity,DetailActivity::class.java)
+            var intent = Intent(this@HomeActivity, DetailActivity::class.java)
             intent.putExtra("id",id)
             startActivity(intent)
+            finish()
         }
     }
 

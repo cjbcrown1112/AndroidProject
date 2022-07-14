@@ -10,7 +10,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.133" />
         <entry key="app/src/main/res/drawable/ic_fav_unfill.xml" value="0.133" />
         <entry key="app/src/main/res/drawable/search_bg.xml" value="0.274" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="app/src/main/res/layout/item_rv_main_category.xml" value="0.5" />
