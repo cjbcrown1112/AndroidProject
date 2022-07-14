@@ -85,14 +85,16 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_margin="@dimen/_10sdp"
                 app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/lightbrown"
                 app:cardElevation="@dimen/_5sdp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@color/lightbrown"
                     android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginEnd="@dimen/_20sdp">
 
@@ -131,7 +133,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="30 min"
                                 android:textSize="@dimen/_10ssp"
-                                android:textColor="@color/hintTextColor"
+                                android:textColor="@color/white"
                                 android:maxEms="10"
                                 android:maxLines="2"
                                 android:textStyle="bold"
@@ -161,7 +163,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="247 cals"
                                 android:textSize="@dimen/_10ssp"
-                                android:textColor="@color/hintTextColor"
+                                android:textColor="@color/white"
                                 android:maxEms="10"
                                 android:maxLines="2"
                                 android:textStyle="bold"
@@ -189,7 +191,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="3 persons"
                                 android:textSize="@dimen/_10ssp"
-                                android:textColor="@color/hintTextColor"
+                                android:textColor="@color/white"
                                 android:maxEms="10"
                                 android:maxLines="2"
                                 android:textStyle="bold"
@@ -230,8 +232,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/hintTextColor"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
+                        android:background="@color/gray"
                         android:fontFamily="@font/gilroy_light"
                         android:paddingTop="@dimen/_10sdp"
                         android:paddingStart="@dimen/_5sdp"
@@ -266,7 +269,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/_10ssp"
-                        android:textColor="@color/hintTextColor"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:fontFamily="@font/gilroy_light"
                         android:paddingTop="@dimen/_10sdp"
