@@ -25,7 +25,6 @@ class DetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-        
 
         var id = intent.getStringExtra("id")
 
@@ -36,7 +35,6 @@ class DetailActivity : BaseActivity() {
             startActivity(intent)
             finish()
         }
-
 
         btnInstagram.setOnClickListener {
             //val sAppLink = "https://www.instagram.com/reginadiloyy"
@@ -56,7 +54,6 @@ class DetailActivity : BaseActivity() {
 
         }
 
-
     }
 
     fun openLink(sAppLink: String, sPackage: String, sWebLink: String) {
@@ -75,6 +72,7 @@ class DetailActivity : BaseActivity() {
             startActivity(intent)
         }
     }
+
 
     fun getSpecificItem(id:String) {
         val service = RetrofitClientInstance.retrofitInstance!!.create(GetDataService::class.java)
